@@ -20,7 +20,7 @@ export default function ShutteringPage() {
           sizes="(max-width: 768px) 100vw, 50vw"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-transparent">
+        <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-transparent md:px-5">
           <div className="container h-full flex flex-col justify-center px-4 md:px-0">
             <div className="max-w-xl">
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-3 md:mb-4">Shuttering Plywood</h1>
@@ -31,66 +31,11 @@ export default function ShutteringPage() {
         </div>
       </section>
 
-      {/* Product Description */}
-      <section className="py-12 md:py-16">
-        <div className="container px-4 md:px-0">
-          <div className="flex flex-col lg:grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
-            <div className="order-2 lg:order-1">
-              <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6">Premium Shuttering Plywood</h2>
-              <p className="text-gray-700 mb-4 text-sm md:text-base">
-                Our shuttering plywood is designed for the most demanding construction projects, offering exceptional
-                strength, durability, and water resistance. The film-faced surface ensures a smooth finish on concrete
-                structures, while the high-density core provides outstanding load-bearing capacity.
-              </p>
-              <p className="text-gray-700 mb-6 text-sm md:text-base">
-                Click on any of our top 5 waterproof shuttering brands to know more and don't forget to watch the
-                product videos.
-              </p>
 
-              <div className="space-y-3 md:space-y-4">
-                <div className="flex items-start">
-                  <CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                  <div>
-                    <h3 className="font-semibold text-sm md:text-base">Superior Water Resistance</h3>
-                    <p className="text-gray-600 text-xs md:text-sm">Withstands exposure to moisture and water without delamination</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start">
-                  <CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                  <div>
-                    <h3 className="font-semibold text-sm md:text-base">High Reusability</h3>
-                    <p className="text-gray-600 text-xs md:text-sm">Can be used multiple times, reducing overall project costs</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start">
-                  <CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                  <div>
-                    <h3 className="font-semibold text-sm md:text-base">Smooth Concrete Finish</h3>
-                    <p className="text-gray-600 text-xs md:text-sm">Provides excellent finish to concrete surfaces, minimizing post-work</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="order-1 lg:order-2 w-full">
-              <Image
-                src="/placeholder.svg?height=500&width=600"
-                alt="Shuttering Plywood in Use"
-                width={600}
-                height={500}
-                className="rounded-lg w-full h-auto"
-                sizes="(max-width: 768px) 100vw, 50vw"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Product Variants */}
       <section className="py-12 md:py-16 bg-gray-50">
-        <div className="container px-4 md:px-0">
+        <div className="container px-4 md:px-10">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 md:mb-12">Our Shuttering Brands</h2>
 
           <Tabs defaultValue="red">

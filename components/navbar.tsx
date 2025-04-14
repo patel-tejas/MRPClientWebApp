@@ -25,7 +25,6 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 md:h-20 items-center justify-between px-4 sm:px-6">
-        {/* Logo */}
         <Link href="/" className="flex items-center space-x-2">
           <div className="h-8 w-8 md:h-10 md:w-10">
             <Image
@@ -35,15 +34,12 @@ export default function Navbar() {
               priority
             />
           </div>
-          <span className="text-sm font-bold text-indigo-900 sm:text-base md:text-lg">
-            MRP EXIM PRODUCTS
-          </span>
+          <span className="text-sm font-bold text-indigo-900 sm:text-base md:text-lg">MRP EXIM PRODUCTS</span>
         </Link>
 
         {/* Desktop Navigation */}
         <NavigationMenu className="hidden md:flex">
           <NavigationMenuList className="text-lg">
-            {/* Home */}
             <NavigationMenuItem>
               <Link href="/" legacyBehavior passHref>
                 <NavigationMenuLink
@@ -60,7 +56,6 @@ export default function Navbar() {
               </Link>
             </NavigationMenuItem>
 
-            {/* About */}
             <NavigationMenuItem>
               <Link href="/about" legacyBehavior passHref>
                 <NavigationMenuLink
@@ -77,7 +72,6 @@ export default function Navbar() {
               </Link>
             </NavigationMenuItem>
 
-            {/* Products */}
             <NavigationMenuItem>
               <NavigationMenuTrigger
                 className={cn(
@@ -90,11 +84,50 @@ export default function Navbar() {
                 Products
               </NavigationMenuTrigger>
               <NavigationMenuContent>
-                {/* ... your product links ... */}
+                <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
+                  <li className="row-span-3">
+                    <NavigationMenuLink asChild>
+                      <Link
+                        className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-red-500 to-red-700 p-6 no-underline outline-none focus:shadow-md"
+                        href="/products/shuttering"
+                      >
+                        <div className="mt-4 mb-2 text-lg font-medium text-white">Shuttering</div>
+                        <p className="text-sm leading-tight text-white/90">
+                          High-quality waterproof shuttering plywood for construction projects
+                        </p>
+                      </Link>
+                    </NavigationMenuLink>
+                  </li>
+                  <li>
+                    <NavigationMenuLink asChild>
+                      <Link
+                        className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                        href="/products/fly-ash-brick-pallet"
+                      >
+                        <div className="text-sm font-medium leading-none">Fly Ash Brick Pallet</div>
+                        <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                          Durable pallets for fly ash brick manufacturing
+                        </p>
+                      </Link>
+                    </NavigationMenuLink>
+                  </li>
+                  <li>
+                    <NavigationMenuLink asChild>
+                      <Link
+                        className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                        href="/products"
+                      >
+                        <div className="text-sm font-medium leading-none">All Products</div>
+                        <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                          Browse our complete range of construction materials
+                        </p>
+                      </Link>
+                    </NavigationMenuLink>
+                  </li>
+                </ul>
               </NavigationMenuContent>
             </NavigationMenuItem>
 
-            {/* Contact */}
             <NavigationMenuItem>
               <Link href="/contact" legacyBehavior passHref>
                 <NavigationMenuLink
@@ -113,16 +146,19 @@ export default function Navbar() {
           </NavigationMenuList>
         </NavigationMenu>
 
-        {/* Action & Mobile Menu */}
         <div className="flex items-center gap-2 sm:gap-4">
           <Button className="hidden sm:flex bg-red-600 hover:bg-red-700 text-sm px-3 py-1 h-9">
             Get In Touch
           </Button>
 
-          {/* Mobile Sheet */}
-          <Sheet open={isOpen} onOpenChange={setIsOpen}>
+          {/* Mobile Menu Button */}
+          <Sheet>
             <SheetTrigger asChild>
-              <Button variant="outline" size="icon" className="md:hidden h-9 w-9">
+              <Button
+                variant="outline"
+                size="icon"
+                className="md:hidden h-9 w-9"
+              >
                 <Menu className="h-5 w-5" />
                 <span className="sr-only">Toggle menu</span>
               </Button>
@@ -130,27 +166,28 @@ export default function Navbar() {
             <SheetContent side="right" className="w-[280px] sm:w-[320px]">
               <SheetHeader>
                 <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
-                </SheetHeader>
+              </SheetHeader>
               <div className="flex flex-col gap-4 py-6">
-                {/* Home */}
                 <Link
                   href="/"
-                  className={cn("w-full py-2 text-base font-medium", pathname === "/" ? "text-primary" : "")}
+                  className={cn(
+                    "w-full py-2 text-base font-medium",
+                    pathname === "/" ? "text-primary" : "",
+                  )}
                   onClick={() => setIsOpen(false)}
                 >
                   Home
                 </Link>
-
-                {/* About */}
                 <Link
                   href="/about"
-                  className={cn("w-full py-2 text-base font-medium", pathname === "/about" ? "text-primary" : "")}
+                  className={cn(
+                    "w-full py-2 text-base font-medium",
+                    pathname === "/about" ? "text-primary" : "",
+                  )}
                   onClick={() => setIsOpen(false)}
                 >
                   About
                 </Link>
-
-                {/* Products submenu */}
                 <div className="flex flex-col gap-1">
                   <div className="w-full py-2 text-base font-medium">Products</div>
                   <Link
@@ -175,21 +212,17 @@ export default function Navbar() {
                     All Products
                   </Link>
                 </div>
-
-                {/* Contact */}
                 <Link
                   href="/contact"
-                  className={cn("w-full py-2 text-base font-medium", pathname === "/contact" ? "text-primary" : "")}
+                  className={cn(
+                    "w-full py-2 text-base font-medium",
+                    pathname === "/contact" ? "text-primary" : "",
+                  )}
                   onClick={() => setIsOpen(false)}
                 >
                   Contact
                 </Link>
-
-                {/* CTA */}
-                <Button
-                  className="mt-2 bg-red-600 hover:bg-red-700 w-full"
-                  onClick={() => setIsOpen(false)}
-                >
+                <Button className="mt-2 bg-red-600 hover:bg-red-700 w-full">
                   Get In Touch
                 </Button>
               </div>
