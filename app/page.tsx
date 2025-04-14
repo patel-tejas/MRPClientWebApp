@@ -3,6 +3,11 @@ import { Button } from "@/components/ui/button"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { ArrowRight, CheckCircle, Clock, HeartHandshake, Shield } from "lucide-react"
 import hero1 from "@/public/landing.jpg"
+import redsp from "@/public/redsp.jpg"
+import blacksp from "@/public/blacksp.jpg"
+import repetition from "@/public/repetition.jpg"
+import metallic from "@/public/metallic.jpg"
+import flyash from "@/public/flyash.jpg"
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
@@ -62,7 +67,7 @@ export default function Home() {
                 <div className="grid md:grid-cols-2 gap-8 items-center">
                   <div>
                     <Image
-                      src="/placeholder.svg?height=300&width=500"
+                      src={flyash}
                       alt="Fly Ash Brick Pallet"
                       width={500}
                       height={300}
@@ -102,13 +107,13 @@ export default function Home() {
 
               <TabsContent value="film" className="mt-0">
                 <div className="grid md:grid-cols-2 gap-8 items-center">
-                  <div>
+                  <div className="">
                     <Image
-                      src="/placeholder.svg?height=300&width=500"
+                      src={redsp}
                       alt="Inova Brand"
                       width={500}
                       height={300}
-                      className="rounded-lg"
+                      className="rounded-lg object-cover"
                     />
                   </div>
                   <div>
@@ -144,7 +149,7 @@ export default function Home() {
                 <div className="grid md:grid-cols-2 gap-8 items-center">
                   <div>
                     <Image
-                      src="/placeholder.svg?height=300&width=500"
+                      src={blacksp}
                       alt="Zipco Metallic Shuttering Plywood"
                       width={500}
                       height={300}
@@ -191,7 +196,7 @@ export default function Home() {
                 <div className="grid md:grid-cols-2 gap-8 items-center">
                   <div>
                     <Image
-                      src="/placeholder.svg?height=300&width=500"
+                      src={repetition}
                       alt="100 Repetition Shuttering Plywood"
                       width={500}
                       height={300}
@@ -225,7 +230,7 @@ export default function Home() {
                 </div>
               </TabsContent>
 
-              <TabsContent value="container" className="mt-0">
+              {/* <TabsContent value="container" className="mt-0">
                 <div className="grid md:grid-cols-2 gap-8 items-center">
                   <div>
                     <Image
@@ -261,14 +266,14 @@ export default function Home() {
                     </Button>
                   </div>
                 </div>
-              </TabsContent>
+              </TabsContent> */}
             </div>
           </Tabs>
         </div>
       </section>
 
       {/* Digital & Machinery Infra Section */}
-      <section className="py-16 bg-gray-50">
+      {/* <section className="py-16 bg-gray-50">
         <div className="container">
           <h2 className="text-4xl font-bold text-center mb-12">Digital & Machinery Infra</h2>
 
@@ -325,7 +330,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Why Choose Us Section */}
       <section className="py-16 bg-gradient-to-r from-neutral-900 to-blue-950 text-white py-40">

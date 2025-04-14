@@ -1,6 +1,6 @@
 import Image from "next/image"
 import { CheckCircle } from "lucide-react"
-
+import about from "@/public/about.avif"
 export default function AboutPage() {
   return (
     <div className="flex flex-col min-h-screen">
@@ -18,17 +18,17 @@ export default function AboutPage() {
       <section className="py-16">
         <div className="container">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 gap-4">
               <div>
                 <Image
-                  src="/placeholder.svg?height=400&width=300"
+                  src={about}
                   alt="Manufacturing Facility"
-                  width={300}
+                  width={800}
                   height={400}
                   className="rounded-lg h-full object-cover"
                 />
               </div>
-              <div className="grid gap-4">
+              {/* <div className="grid gap-4">
                 <Image
                   src="/placeholder.svg?height=190&width=300"
                   alt="Production Line"
@@ -43,7 +43,7 @@ export default function AboutPage() {
                   height={190}
                   className="rounded-lg h-full object-cover"
                 />
-              </div>
+              </div> */}
             </div>
 
             <div>

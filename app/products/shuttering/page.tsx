@@ -411,7 +411,7 @@ export default function ShutteringPage() {
             <Button className="bg-white text-red-600 hover:bg-gray-100 w-full sm:w-auto">
               Request a Quote
             </Button>
-            <Button variant="outline" className="text-white border-white hover:bg-white/10 w-full sm:w-auto">
+            <Button className="text-white border-white hover:bg-white/10 w-full sm:w-auto">
               Download Catalog
             </Button>
           </div>
