@@ -12,12 +12,10 @@ const montserrat = Montserrat({
 })
 
 export const metadata: Metadata = {
-  title: "United Timber Works - Premium Construction Materials",
+  title: "MRP Exim Products – High-Quality Shuttering Plywood & Pallets",
   description:
-    "Leading manufacturer of high-quality shuttering plywood, fly ash brick pallets, and construction materials for B2B clients.",
-    generator: 'v0.dev'
-}
-
+    "MRP Exim Products is a leading manufacturer of premium shuttering plywood and fly ash brick pallets. With a focus on durability, sustainability, and cost-effectiveness, our ZIPCO range is designed to meet the demands of modern construction projects. Discover our high-abrasion metallic film face plywood engineered for superior performance and long-term value.",
+};
 export default function RootLayout({
   children,
 }: Readonly<{
