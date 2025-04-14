@@ -42,16 +42,16 @@ export default function ShutteringPage() {
             <div className="overflow-x-auto no-scrollbar pb-2">
               <TabsList className="flex w-max space-x-2 px-1 md:px-0 md:w-full md:grid md:grid-cols-4">
                 <TabsTrigger value="red" className="py-2 md:py-3 text-xs md:text-sm whitespace-nowrap">
-                  Red Plywood
+                  Red Shuttering Plywood
                 </TabsTrigger>
                 <TabsTrigger value="black" className="py-2 md:py-3 text-xs md:text-sm whitespace-nowrap">
-                  Black Plywood
+                  Black Shuttering Plywood
                 </TabsTrigger>
                 <TabsTrigger value="metallic" className="py-2 md:py-3 text-xs md:text-sm whitespace-nowrap">
-                  Metallic Plywood
+                  Metallic Shuttering Plywood
                 </TabsTrigger>
                 <TabsTrigger value="repetition" className="py-2 md:py-3 text-xs md:text-sm whitespace-nowrap">
-                  100 Repetition
+                  100 Repetition Shuttering Plywood
                 </TabsTrigger>
               </TabsList>
             </div>

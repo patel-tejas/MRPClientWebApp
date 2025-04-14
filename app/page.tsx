@@ -149,7 +149,7 @@ export default function Home() {
                 <div className="grid md:grid-cols-2 gap-8 items-center">
                   <div>
                     <Image
-                      src={blacksp}
+                      src={metallic}
                       alt="Zipco Metallic Shuttering Plywood"
                       width={500}
                       height={300}
