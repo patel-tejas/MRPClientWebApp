@@ -2,7 +2,7 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { ArrowRight, CheckCircle, Clock, HeartHandshake, Shield } from "lucide-react"
-
+import hero1 from "@/public/landing.jpg"
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
@@ -10,7 +10,7 @@ export default function Home() {
       <section className="relative">
         <div className="relative h-[600px] w-full overflow-hidden">
           <Image
-            src="/placeholder.svg?height=600&width=1920"
+            src={hero1}
             alt="Construction site with cranes"
             width={1920}
             height={600}
