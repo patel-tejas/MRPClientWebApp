@@ -9,6 +9,7 @@ import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
 import { MapPin, Phone, Mail, Clock } from "lucide-react"
 import Link from "next/link"
+import axios from "axios"
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -23,10 +24,20 @@ export default function ContactPage() {
     setFormData((prev) => ({ ...prev, [name]: value }))
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     // Handle form submission logic here
-    console.log("Form submitted:", formData)
+
+    const res = await axios.post("/api/contact", formData)
+
+    if (res.status !== 200) {
+      alert("Error submitting form. Please try again.")
+      return
+    }
+    // Assuming the form submission is successful
+     const data = res.data
+    // Log the form data to the console
+    console.log("Form submitted successfully:", data)
     // Reset form
     setFormData({ name: "", email: "", phone: "", message: "" })
     // Show success message
@@ -162,8 +173,17 @@ export default function ContactPage() {
               </div>
 
               {/* Map Placeholder */}
-              <div className="mt-8 h-64 bg-gray-200 rounded-lg flex items-center justify-center">
-                <p className="text-gray-500">Google Map will be embedded here</p>
+              <div className="mt-8 container px-4 md:px-6 mx-auto overflow-hidden">
+                <div className="relative w-full overflow-hidden pb-[56.25%] h-0 rounded-lg shadow-lg">
+                  <iframe
+                    className="absolute top-0 left-0 w-full h-full border-0"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.088839910621!2d72.5548269750536!3d23.071609914496964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e837abd68664f%3A0xa355c744528ab0b5!2sShubh%20Labh%20Society!5e1!3m2!1sen!2sin!4v1744990317691!5m2!1sen!2sin"
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    allowFullScreen
+                  >
+                  </iframe>
+                </div>
               </div>
             </div>
           </div>
