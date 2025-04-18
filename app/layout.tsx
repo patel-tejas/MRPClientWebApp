@@ -5,6 +5,8 @@ import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
+import FloatingContactButton from "@/components/FloatingContact"
+import { TooltipProvider } from "@/components/ui/tooltip"
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -25,16 +27,18 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={`${montserrat.variable} font-montserrat`}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
-          <div className="flex min-h-screen flex-col">
-            <Navbar />
-            <main className="flex-1">{children}</main>
-            <Footer />
-          </div>
+          <TooltipProvider>
+            <div className="flex min-h-screen flex-col">
+              <Navbar />
+              <main className="flex-1">{children}</main>
+              <Footer />
+              <FloatingContactButton />
+
+            </div>
+          </TooltipProvider>
         </ThemeProvider>
       </body>
     </html>
   )
 }
 
-
-import './globals.css'
