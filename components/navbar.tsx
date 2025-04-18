@@ -98,32 +98,20 @@ export default function Navbar() {
                       </Link>
                     </NavigationMenuLink>
                   </li>
-                  <li>
+                  <li className="row-span-3">
                     <NavigationMenuLink asChild>
                       <Link
-                        className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                        className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-blue-500 to-blue-700 p-6 no-underline outline-none focus:shadow-md"
                         href="/products/fly-ash-brick-pallet"
                       >
-                        <div className="text-sm font-medium leading-none">Fly Ash Brick Pallet</div>
-                        <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                          Durable pallets for fly ash brick manufacturing
+                        <div className="mt-4 mb-2 text-lg font-medium text-white">Fly Ash Brick Pallet</div>
+                        <p className="text-sm leading-tight text-white/90">
+                          Durable fly ash brick pallets for efficient construction
                         </p>
                       </Link>
                     </NavigationMenuLink>
                   </li>
-                  <li>
-                    <NavigationMenuLink asChild>
-                      <Link
-                        className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                        href="/products"
-                      >
-                        <div className="text-sm font-medium leading-none">All Products</div>
-                        <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                          Browse our complete range of construction materials
-                        </p>
-                      </Link>
-                    </NavigationMenuLink>
-                  </li>
+
                 </ul>
               </NavigationMenuContent>
             </NavigationMenuItem>
@@ -147,14 +135,14 @@ export default function Navbar() {
         </NavigationMenu>
 
         <div className="flex items-center gap-2 sm:gap-4">
-          <Link  href={"/contact"} className="hidden sm:flex">
+          <Link href="/contact" className="hidden sm:flex">
             <Button className="hidden sm:flex bg-red-600 hover:bg-red-700 text-sm px-3 py-1 h-9">
               Get In Touch
             </Button>
           </Link>
 
           {/* Mobile Menu Button */}
-          <Sheet>
+          <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>
               <Button
                 variant="outline"
@@ -206,13 +194,6 @@ export default function Navbar() {
                   >
                     Fly Ash Brick Pallet
                   </Link>
-                  <Link
-                    href="/products"
-                    className="w-full py-1.5 pl-4 text-sm"
-                    onClick={() => setIsOpen(false)}
-                  >
-                    All Products
-                  </Link>
                 </div>
                 <Link
                   href="/contact"
@@ -224,7 +205,10 @@ export default function Navbar() {
                 >
                   Contact
                 </Link>
-                <Button className="mt-2 bg-red-600 hover:bg-red-700 w-full">
+                <Button
+                  className="mt-2 bg-red-600 hover:bg-red-700 w-full"
+                  onClick={() => setIsOpen(false)}
+                >
                   Get In Touch
                 </Button>
               </div>

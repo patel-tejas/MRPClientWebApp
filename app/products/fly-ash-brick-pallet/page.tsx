@@ -7,131 +7,177 @@ export default function FlyAshBrickPalletPage() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="relative h-[400px]">
-        <Image src="/placeholder.svg?height=400&width=1920" alt="Fly Ash Brick Pallet" fill className="object-cover" />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-transparent">
-          <div className="container h-full flex flex-col justify-center">
+      <section className="relative h-[300px] md:h-[400px]">
+        <Image
+          src="/pallet-hero.jpg"
+          alt="Fly Ash Brick Pallets"
+          fill
+          className="object-cover"
+          sizes="(max-width: 768px) 100vw, 50vw"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-transparent md:px-5">
+          <div className="container h-full flex flex-col justify-center px-4 md:px-0">
             <div className="max-w-xl">
-              <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Fly Ash Brick Pallet</h1>
-              <p className="text-xl text-white/80 mb-6">Durable and Reliable Pallets for Brick Manufacturing</p>
-              <Button className="bg-red-600 hover:bg-red-700">Request a Quote</Button>
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-3 md:mb-4">
+                Zipco Fly Ash Brick Pallets
+              </h1>
+              <p className="text-lg md:text-xl text-white/80 mb-4 md:mb-6">
+                Engineered for Strength & Precision
+              </p>
+              <Button className="bg-red-600 hover:bg-red-700 w-full sm:w-auto">
+                Request a Quote
+              </Button>
             </div>
           </div>
         </div>
       </section>
 
       {/* Product Description */}
-      <section className="py-16">
-        <div className="container">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <section className="py-12 md:py-16">
+        <div className="container px-4 md:px-10">
+          <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold mb-6">Premium Fly Ash Brick Pallets</h2>
-              <p className="text-gray-700 mb-4">
-                Our fly ash brick pallets are specifically designed for the brick manufacturing industry, offering
-                exceptional durability, stability, and longevity. Made from high-quality materials, these pallets ensure
-                efficient production and handling of fly ash bricks.
+              <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6">
+                Premium Fly Ash Brick Pallets
+              </h2>
+              <p className="text-gray-700 mb-4 text-sm md:text-base">
+                Zipco presents premium-grade Fly Ash Brick Pallets, meticulously designed for heavy-duty industrial handling,
+                automated stacking, and seamless machine processing of fly ash bricks, blocks, and pavers.
               </p>
-              <p className="text-gray-700 mb-6">
-                Available in various sizes and configurations to meet your specific manufacturing requirements.
+              <p className="text-gray-700 mb-6 text-sm md:text-base">
+                Available in three specialized variants to meet every construction need - Standard, Calibrated, and Jute-faced options.
               </p>
 
-              <div className="space-y-4">
+              <div className="space-y-3 md:space-y-4">
                 <div className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-1" />
                   <div>
-                    <h3 className="font-semibold">Superior Durability</h3>
-                    <p className="text-gray-600">Withstands the rigors of brick manufacturing processes</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start">
-                  <CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-1" />
-                  <div>
-                    <h3 className="font-semibold">Excellent Load Capacity</h3>
-                    <p className="text-gray-600">Designed to handle heavy loads without deformation</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start">
-                  <CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-1" />
-                  <div>
-                    <h3 className="font-semibold">Customizable Dimensions</h3>
-                    <p className="text-gray-600">
-                      Available in various sizes to suit different brick manufacturing setups
+                    <h3 className="font-semibold text-sm md:text-base">Reinforced Structure</h3>
+                    <p className="text-gray-600 text-sm md:text-base">
+                      Dual-layer wire mesh jali for optimal load distribution
                     </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start">
+                  <CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-1" />
+                  <div>
+                    <h3 className="font-semibold">Advanced Surface Protection</h3>
+                    <p className="text-gray-600">180 gsm black film facing with UV resistance and waterproofing</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start">
+                  <CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-1" />
+                  <div>
+                    <h3 className="font-semibold">Custom Sizing</h3>
+                    <p className="text-gray-600">Available in thicknesses from 12mm to 75mm to suit all requirements</p>
                   </div>
                 </div>
               </div>
             </div>
-
             <div>
               <Image
-                src="/placeholder.svg?height=500&width=600"
+                src="/pallet-usage.jpg"
                 alt="Fly Ash Brick Pallet in Use"
                 width={600}
-                height={500}
-                className="rounded-lg"
+                height={400}
+                className="rounded-lg shadow-lg w-full h-auto"
+                sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>
           </div>
         </div>
       </section>
 
+
+      {/* Product Comparison */}
+      {/* <section className="py-12 md:py-16 bg-gray-50">
+        <div className="container px-4 md:px-10">
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 md:mb-12">
+            Pallet Specifications
+          </h2>
+
+          <div className="overflow-x-auto">
+            <table className="min-w-[600px] w-full bg-white rounded-lg shadow-md overflow-hidden">
+              <thead className="bg-gray-800 text-white">
+                <tr>
+                  <th className="p-2 md:p-4 text-left text-sm md:text-base">Feature</th>
+                  <th className="p-2 md:p-4 text-left text-sm md:text-base">Standard Pallet</th>
+                  <th className="p-2 md:p-4 text-left text-sm md:text-base">Calibrated Pallet</th>
+                  <th className="p-2 md:p-4 text-left text-sm md:text-base">Jute Pallet</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-200 text-sm md:text-base">
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section> */}
+
       {/* Product Variants */}
-      <section className="py-16 bg-gray-50">
-        <div className="container">
-          <h2 className="text-3xl font-bold text-center mb-12">Pallet Variants</h2>
+      <section className="py-12 md:py-16">
+        <div className="container px-4 md:px-10">
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 md:mb-12">
+            Pallet Variants
+          </h2>
 
           <Tabs defaultValue="standard" className="w-full">
-            <TabsList className="grid grid-cols-3 w-full h-auto mb-8">
-              <TabsTrigger value="standard" className="py-3">
-                Standard Pallet
-              </TabsTrigger>
-              <TabsTrigger value="heavy-duty" className="py-3">
-                Heavy-Duty Pallet
-              </TabsTrigger>
-              <TabsTrigger value="custom" className="py-3">
-                Custom Solutions
-              </TabsTrigger>
-            </TabsList>
+            <div className="overflow-x-auto no-scrollbar pb-2">
+              <TabsList className="flex w-max space-x-2 px-1 md:px-0 md:w-full md:grid md:grid-cols-3 h-auto">
+                <TabsTrigger
+                  value="standard"
+                  className="py-2 md:py-3 text-xs md:text-sm whitespace-nowrap"
+                >
+                  Standard Fly Ash Brick Pallet
+                </TabsTrigger>
+                <TabsTrigger value="calibrated" className="py-3">
+                  Calibrated Fly Ash Brick Pallet
+                </TabsTrigger>
+                <TabsTrigger value="jute" className="py-3">
+                  Jute Fly Ash Brick Pallet
+                </TabsTrigger>
+              </TabsList>
+            </div>
 
-            <TabsContent value="standard" className="mt-0">
-              <div className="bg-white p-6 rounded-lg shadow-md">
-                <div className="grid md:grid-cols-2 gap-8 items-center">
+            {/* Standard Pallet */}
+            <TabsContent value="standard" className="mt-4 md:mt-6">
+              <div className="bg-white p-4 md:p-6 rounded-lg shadow-md">
+                <div className="flex flex-col md:grid md:grid-cols-2 gap-6 md:gap-8 items-center">
                   <div>
                     <Image
-                      src="/placeholder.svg?height=300&width=500"
+                      src="/standard-pallet.jpg"
                       alt="Standard Fly Ash Brick Pallet"
                       width={500}
                       height={300}
-                      className="rounded-lg"
+                      className="rounded-lg w-full h-auto"
+                      sizes="(max-width: 768px) 100vw, 50vw"
                     />
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold mb-4">Standard Pallet</h3>
-                    <p className="text-gray-700 mb-4">
-                      Our standard fly ash brick pallet is designed for regular brick manufacturing operations, offering
-                      a balance of durability and cost-effectiveness.
+                    <h3 className="text-xl md:text-2xl font-bold mb-3 md:mb-4">
+                      Standard Fly Ash Brick Pallet
+                    </h3>
+                    <p className="text-gray-700 mb-4 text-sm md:text-base">
+                      Our standard pallet offers reliable performance for general construction needs...
                     </p>
-
-                    <div className="space-y-4 mb-6">
-                      <div className="grid grid-cols-2 gap-4">
-                        <div className="bg-gray-100 p-3 rounded">
-                          <span className="font-semibold block">Dimensions</span>
-                          <span>900mm x 600mm</span>
-                        </div>
-                        <div className="bg-gray-100 p-3 rounded">
-                          <span className="font-semibold block">Load Capacity</span>
-                          <span>Up to 1000 kg</span>
-                        </div>
-                        <div className="bg-gray-100 p-3 rounded">
-                          <span className="font-semibold block">Material</span>
-                          <span>High-density plywood</span>
-                        </div>
-                        <div className="bg-gray-100 p-3 rounded">
-                          <span className="font-semibold block">Lifespan</span>
-                          <span>3-5 years</span>
-                        </div>
+                    <div className="grid grid-cols-2 gap-4 mb-6">
+                      <div className="bg-gray-100 p-3 rounded">
+                        <span className="font-semibold block">Dimensions</span>
+                        <span>Custom sizes</span>
+                      </div>
+                      <div className="bg-gray-100 p-3 rounded">
+                        <span className="font-semibold block">Thickness</span>
+                        <span>12mm, 18mm, 20mm, 25mm, 30mm, 35mm, ....75mm
+                        </span>
+                      </div>
+                      <div className="bg-gray-100 p-3 rounded">
+                        <span className="font-semibold block">Material</span>
+                        <span>Film-faced hardwood</span>
+                      </div>
+                      <div className="bg-gray-100 p-3 rounded">
+                        <span className="font-semibold block">Lifespan</span>
+                        <span>3-8 years</span>
                       </div>
                     </div>
 
@@ -141,93 +187,113 @@ export default function FlyAshBrickPalletPage() {
               </div>
             </TabsContent>
 
-            <TabsContent value="heavy-duty" className="mt-0">
-              <div className="bg-white p-6 rounded-lg shadow-md">
-                <div className="grid md:grid-cols-2 gap-8 items-center">
+            {/* Calibrated Pallet */}
+            <TabsContent value="calibrated" className="mt-4 md:mt-6">
+              <div className="bg-white p-4 md:p-6 rounded-lg shadow-md">
+                <div className="flex flex-col md:grid md:grid-cols-2 gap-6 md:gap-8 items-center">
                   <div>
                     <Image
-                      src="/placeholder.svg?height=300&width=500"
-                      alt="Heavy-Duty Fly Ash Brick Pallet"
+                      src="/calibrated-pallet.jpg"
+                      alt="Calibrated Fly Ash Brick Pallet"
                       width={500}
                       height={300}
-                      className="rounded-lg"
+                      className="rounded-lg w-full h-auto"
+                      sizes="(max-width: 768px) 100vw, 50vw"
                     />
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold mb-4">Heavy-Duty Pallet</h3>
-                    <p className="text-gray-700 mb-4">
-                      Our heavy-duty fly ash brick pallet is engineered for intensive manufacturing environments where
-                      durability and load capacity are paramount.
+                    <h3 className="text-xl md:text-2xl font-bold mb-3 md:mb-4">Calibrated Fly Ash Brick Pallet</h3>
+                    <p className="text-gray-700 mb-4 text-sm md:text-base">
+                      Engineered for absolute precision with tolerance under 1mm, these pallets guarantee
+                      ultra-tight dimensional accuracy for high-end construction projects.
                     </p>
 
-                    <div className="space-y-4 mb-6">
-                      <div className="grid grid-cols-2 gap-4">
-                        <div className="bg-gray-100 p-3 rounded">
-                          <span className="font-semibold block">Dimensions</span>
-                          <span>1000mm x 800mm</span>
-                        </div>
-                        <div className="bg-gray-100 p-3 rounded">
-                          <span className="font-semibold block">Load Capacity</span>
-                          <span>Up to 1500 kg</span>
-                        </div>
-                        <div className="bg-gray-100 p-3 rounded">
-                          <span className="font-semibold block">Material</span>
-                          <span>Reinforced plywood</span>
-                        </div>
-                        <div className="bg-gray-100 p-3 rounded">
-                          <span className="font-semibold block">Lifespan</span>
-                          <span>5-7 years</span>
-                        </div>
+                    <div className="grid grid-cols-2 gap-4 mb-6">
+                      <div className="bg-gray-100 p-3 rounded">
+                        <span className="font-semibold block">Tolerance</span>
+                        <span>&lt;1 mm precision</span>
+                      </div>
+                      <div className="bg-gray-100 p-3 rounded">
+                        <span className="font-semibold block">Construction Speed</span>
+                        <span>20-30% faster</span>
+                      </div>
+                      <div className="bg-gray-100 p-3 rounded">
+                        <span className="font-semibold block">Mortar Savings</span>
+                        <span>15-20% reduction</span>
+                      </div>
+                      <div className="bg-gray-100 p-3 rounded">
+                        <span className="font-semibold block">Load Capacity</span>
+                        <span>1000+ kg</span>
                       </div>
                     </div>
 
-                    <Button className="bg-red-600 hover:bg-red-700">Download Specification</Button>
+                    <div className="mb-6">
+                      <h4 className="font-semibold mb-2">Premium Features:</h4>
+                      <ul className="list-disc pl-5 space-y-1">
+                        <li>Reinforced hardwood frame with wire mesh</li>
+                        <li>Machine-grade black film surface</li>
+                        <li>Chamfered edges for automation</li>
+                        <li>Ideal for high-rises and RCC structures</li>
+                      </ul>
+                    </div>
+
+                    <Button className="bg-red-600 hover:bg-red-700">Request Calibrated Quote</Button>
                   </div>
                 </div>
               </div>
             </TabsContent>
 
-            <TabsContent value="custom" className="mt-0">
-              <div className="bg-white p-6 rounded-lg shadow-md">
-                <div className="grid md:grid-cols-2 gap-8 items-center">
+            {/* Jute Pallet */}
+            <TabsContent value="jute" className="mt-4 md:mt-6">
+              <div className="bg-white p-4 md:p-6 rounded-lg shadow-md">
+                <div className="flex flex-col md:grid md:grid-cols-2 gap-6 md:gap-8 items-center">
                   <div>
                     <Image
-                      src="/placeholder.svg?height=300&width=500"
-                      alt="Custom Fly Ash Brick Pallet"
+                      src="/jute-pallet.jpg"
+                      alt="Jute Fly Ash Brick Pallet"
                       width={500}
                       height={300}
-                      className="rounded-lg"
+                      className="rounded-lg w-full h-auto"
+                      sizes="(max-width: 768px) 100vw, 50vw"
                     />
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold mb-4">Custom Solutions</h3>
-                    <p className="text-gray-700 mb-4">
-                      We offer custom-designed fly ash brick pallets tailored to your specific manufacturing
-                      requirements, ensuring optimal performance for your unique setup.
+                    <h3 className="text-xl md:text-2xl font-bold mb-3 md:mb-4">Jute Fly Ash Brick Pallet</h3>
+                    <p className="text-gray-700 mb-4 text-sm md:text-base">
+                      Our eco-friendly jute-faced pallets combine durability with sustainability, offering
+                      extended lifespan and superior performance for long-term projects.
                     </p>
 
-                    <div className="space-y-4 mb-6">
-                      <div className="grid grid-cols-2 gap-4">
-                        <div className="bg-gray-100 p-3 rounded">
-                          <span className="font-semibold block">Dimensions</span>
-                          <span>Custom as required</span>
-                        </div>
-                        <div className="bg-gray-100 p-3 rounded">
-                          <span className="font-semibold block">Load Capacity</span>
-                          <span>As per specification</span>
-                        </div>
-                        <div className="bg-gray-100 p-3 rounded">
-                          <span className="font-semibold block">Material</span>
-                          <span>Various options</span>
-                        </div>
-                        <div className="bg-gray-100 p-3 rounded">
-                          <span className="font-semibold block">Features</span>
-                          <span>Customizable</span>
-                        </div>
+                    <div className="grid grid-cols-2 gap-4 mb-6">
+                      <div className="bg-gray-100 p-3 rounded">
+                        <span className="font-semibold block">Dimensions</span>
+                        <span>Custom sizes</span>
+                      </div>
+                      <div className="bg-gray-100 p-3 rounded">
+                        <span className="font-semibold block">Thickness</span>
+                        <span>12mm, 18mm, 20mm, 25mm, 30mm, 35mm, ....75mm</span>
+                      </div>
+                      <div className="bg-gray-100 p-3 rounded">
+                        <span className="font-semibold block">Material</span>
+                        <span>Jute film-faced</span>
+                      </div>
+                      <div className="bg-gray-100 p-3 rounded">
+                        <span className="font-semibold block">Lifespan</span>
+                        <span>7-15 years</span>
                       </div>
                     </div>
 
-                    <Button className="bg-red-600 hover:bg-red-700">Contact for Custom Quote</Button>
+                    <div className="mb-6">
+                      <h4 className="font-semibold mb-2">Key Advantages:</h4>
+                      <ul className="list-disc pl-5 space-y-1">
+                        <li>Exceptional durability</li>
+                        <li>Eco-friendly materials</li>
+                        <li>Reduced maintenance</li>
+                        <li>Superior weather resistance</li>
+                      </ul>
+                    </div>
+
+                    <Button className="bg-red-600 hover:bg-red-700">Inquire About Jute Pallets</Button>
                   </div>
                 </div>
               </div>
@@ -236,160 +302,83 @@ export default function FlyAshBrickPalletPage() {
         </div>
       </section>
 
-      {/* Benefits Section */}
-      <section className="py-16">
-        <div className="container">
-          <h2 className="text-3xl font-bold text-center mb-12">Benefits of Our Fly Ash Brick Pallets</h2>
+      {/* Features Section */}
+      <section className="py-12 md:py-16 bg-gray-50">
+        <div className="container px-4 md:px-10">
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 md:mb-12">
+            Why Choose Zipco Pallets?
+          </h2>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <div className="bg-red-600 text-white rounded-full w-12 h-12 flex items-center justify-center mb-4">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="h-6 w-6"
-                >
-                  <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path>
-                  <path d="m9 12 2 2 4-4"></path>
-                </svg>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+            <div className="bg-white p-4 md:p-6 rounded-lg shadow-md border border-gray-100">
+              <div className="bg-blue-100 text-blue-800 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                {/* Icon */}
               </div>
-              <h3 className="text-xl font-bold mb-2">Increased Productivity</h3>
-              <p className="text-gray-600">
-                Our pallets are designed for efficient handling, reducing production time and increasing overall
-                productivity in brick manufacturing.
+              <h3 className="text-lg md:text-xl font-semibold mb-2">
+                Industrial-Grade Durability
+              </h3>
+              <p className="text-gray-600 text-sm md:text-base">
+                Hardwood construction with reinforced mesh...
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <div className="bg-blue-900 text-white rounded-full w-12 h-12 flex items-center justify-center mb-4">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="h-6 w-6"
-                >
-                  <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path>
-                  <path d="M12 8v4l3 3"></path>
+            <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
+              <div className="bg-green-100 text-green-800 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
                 </svg>
               </div>
-              <h3 className="text-xl font-bold mb-2">Cost Savings</h3>
+              <h3 className="text-xl font-semibold mb-2">Weather & Termite Resistant</h3>
               <p className="text-gray-600">
-                The durability and longevity of our pallets result in fewer replacements, leading to significant cost
-                savings over time.
+                Protective film and paint ensure all-weather performance and protection against pests.
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <div className="bg-amber-400 text-black rounded-full w-12 h-12 flex items-center justify-center mb-4">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="h-6 w-6"
-                >
-                  <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path>
-                  <path d="M4.93 4.93 19.07 19.07"></path>
+            <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
+              <div className="bg-amber-100 text-amber-800 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
                 </svg>
               </div>
-              <h3 className="text-xl font-bold mb-2">Improved Quality</h3>
+              <h3 className="text-xl font-semibold mb-2">Seamless Automation</h3>
               <p className="text-gray-600">
-                Our pallets provide a stable platform for brick formation, resulting in more consistent and higher
-                quality end products.
+                Precision design ensures smooth integration with automated brick/block machines.
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <div className="bg-red-600 text-white rounded-full w-12 h-12 flex items-center justify-center mb-4">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="h-6 w-6"
-                >
-                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
-                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+            <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
+              <div className="bg-red-100 text-red-800 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
                 </svg>
               </div>
-              <h3 className="text-xl font-bold mb-2">Versatility</h3>
+              <h3 className="text-xl font-semibold mb-2">Heavy Load Capacity</h3>
               <p className="text-gray-600">
-                Our pallets are suitable for various brick sizes and types, providing flexibility in your manufacturing
-                operations.
+                Built to PF Grade standards, supporting 1000+ kg loads for industrial-scale operations.
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <div className="bg-blue-900 text-white rounded-full w-12 h-12 flex items-center justify-center mb-4">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="h-6 w-6"
-                >
-                  <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path>
-                  <line x1="4" x2="4" y1="22" y2="15"></line>
+            <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
+              <div className="bg-purple-100 text-purple-800 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
                 </svg>
               </div>
-              <h3 className="text-xl font-bold mb-2">Easy Handling</h3>
+              <h3 className="text-xl font-semibold mb-2">Eco-Conscious Materials</h3>
               <p className="text-gray-600">
-                Designed with ergonomics in mind, our pallets are easy to handle, reducing worker fatigue and potential
-                injuries.
+                Sustainable materials with minimal environmental impact across all product lines.
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <div className="bg-amber-400 text-black rounded-full w-12 h-12 flex items-center justify-center mb-4">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="h-6 w-6"
-                >
-                  <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path>
-                  <path d="M12 8v8"></path>
-                  <path d="M8 12h8"></path>
+            <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
+              <div className="bg-teal-100 text-teal-800 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                 </svg>
               </div>
-              <h3 className="text-xl font-bold mb-2">Environmentally Friendly</h3>
+              <h3 className="text-xl font-semibold mb-2">Cost Efficiency</h3>
               <p className="text-gray-600">
-                Our pallets are made from sustainable materials, aligning with environmentally responsible manufacturing
-                practices.
+                Long lifespan and reduced maintenance deliver exceptional value over time.
               </p>
             </div>
           </div>
@@ -397,17 +386,20 @@ export default function FlyAshBrickPalletPage() {
       </section>
 
       {/* Call to Action */}
-      <section className="py-16 bg-gradient-to-r from-blue-900 to-blue-950 text-white mb-16">
-        <div className="container text-center">
-          <h2 className="text-3xl font-bold mb-6">Ready to Optimize Your Brick Manufacturing?</h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Contact our team today to discuss your fly ash brick pallet requirements and discover how our solutions can
-            enhance your manufacturing process.
+      <section className="py-12 md:py-16 bg-gradient-to-r from-blue-900 to-blue-950 text-white">
+        <div className="container px-4 md:px-10 text-center">
+          <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6">
+            Upgrade to Zipco Pallets Today
+          </h2>
+          <p className="text-lg md:text-xl mb-6 md:mb-8 max-w-2xl mx-auto">
+            Get in touch with our experts to find the perfect pallet solution...
           </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Button className="bg-white text-blue-900 hover:bg-gray-100">Request a Quote</Button>
-            <Button variant="outline" className="text-white border-white hover:bg-white/10">
-              Download Catalog
+          <div className="flex flex-col sm:flex-row justify-center gap-3 md:gap-4">
+            <Button className="bg-white text-blue-900 hover:bg-gray-100 w-full md:w-auto px-6 py-3">
+              Request Custom Quote
+            </Button>
+            <Button variant="outline" className="text-white border-white hover:bg-white/10 w-full md:w-auto px-6 py-3">
+              Download Full Catalog
             </Button>
           </div>
         </div>
