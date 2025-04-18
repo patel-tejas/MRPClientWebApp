@@ -8,6 +8,7 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
 import { MapPin, Phone, Mail, Clock } from "lucide-react"
+import Link from "next/link"
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -122,7 +123,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold mb-1">Our Location</h3>
-                    <p className="text-gray-600">Yamuna Nagar, Haryana, India</p>
+                    <p className="text-gray-600">21- Shubh Labh Society, Near Nirnaynagar, Ghatloadia, Ahmedabad, Gujarat, India</p>
                   </div>
                 </div>
 
@@ -131,9 +132,9 @@ export default function ContactPage() {
                     <Phone className="h-6 w-6" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold mb-1">Phone Number</h3>
-                    <p className="text-gray-600">+91 98765 43210</p>
-                    <p className="text-gray-600">+91 12345 67890</p>
+                    <h3 className="text-lg font-semibold mb-1 ">Phone Number</h3>
+                    <Link href="tel:+917874075811" className="text-gray-600 block">+91 78740 75811</Link>
+                    <Link href="tel:+918780825809" className="text-gray-600">+91 87808 25809</Link>
                   </div>
                 </div>
 
@@ -143,8 +144,8 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold mb-1">Email Address</h3>
-                    <p className="text-gray-600">info@unitedtimberworks.com</p>
-                    <p className="text-gray-600">sales@unitedtimberworks.com</p>
+                    <Link href="mailto:mrpeximproducts@gmail.com" className="text-gray-600">mrpeximproducts@gmail.com</Link>
+
                   </div>
                 </div>
 
@@ -154,8 +155,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold mb-1">Business Hours</h3>
-                    <p className="text-gray-600">Monday - Friday: 9:00 AM - 6:00 PM</p>
-                    <p className="text-gray-600">Saturday: 9:00 AM - 1:00 PM</p>
+                    <p className="text-gray-600">Monday - Saturday: 9:00 AM - 7:00 PM</p>
                     <p className="text-gray-600">Sunday: Closed</p>
                   </div>
                 </div>

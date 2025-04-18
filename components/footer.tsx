@@ -80,7 +80,7 @@ export default function Footer() {
             <ul className="space-y-4">
               <li className="flex">
                 <MapPin className="mr-2 h-10 w-10 text-primary" />
-                <span className="text-neutral-300">21- Shubh Labh Society, Near Nirnaynagar, Ghatloadia, Gujarat, India</span>
+                <span className="text-neutral-300">21- Shubh Labh Society, Near Nirnaynagar, Ghatloadia, Ahmedabad, Gujarat, India.</span>
               </li>
               <li className="flex ">
                 <Phone className="mr-2 h-5 w-5 text-primary " />

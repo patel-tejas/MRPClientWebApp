@@ -8,6 +8,7 @@ import blacksp from "@/public/blacksp.jpg"
 import repetition from "@/public/repetition.jpg"
 import metallic from "@/public/metallic.jpg"
 import flyash from "@/public/flyash.jpg"
+import Link from "next/link"
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
@@ -30,7 +31,7 @@ export default function Home() {
                     Need Shuttering Plywood For Your Next High Rise?
                   </h1>
                   <p className="mt-4 text-lg">Source Shuttering Ply For Your Project</p>
-                  <Button className="mt-6 bg-red-600 hover:bg-red-700 text-white">Get In Touch With Us Now!</Button>
+                  <Link href={"/contact"}><Button className="mt-6 bg-red-600 hover:bg-red-700 text-white">Get In Touch With Us Now!</Button></Link>
                 </div>
               </div>
             </div>

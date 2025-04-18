@@ -147,9 +147,11 @@ export default function Navbar() {
         </NavigationMenu>
 
         <div className="flex items-center gap-2 sm:gap-4">
-          <Button className="hidden sm:flex bg-red-600 hover:bg-red-700 text-sm px-3 py-1 h-9">
-            Get In Touch
-          </Button>
+          <Link  href={"/contact"} className="hidden sm:flex">
+            <Button className="hidden sm:flex bg-red-600 hover:bg-red-700 text-sm px-3 py-1 h-9">
+              Get In Touch
+            </Button>
+          </Link>
 
           {/* Mobile Menu Button */}
           <Sheet>
