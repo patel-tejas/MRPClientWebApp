@@ -59,31 +59,43 @@
   }
 }
 
-
+/* Vertical Scrollbar */
 ::-webkit-scrollbar {
-  width: 10px;
-
+  width: 10px;  /* Vertical scrollbar width */
+  height: 8px;  /* Horizontal scrollbar height */
 }
 
+/* Horizontal Scrollbar */
+::-webkit-scrollbar:horizontal {
+  height: 8px;  /* Makes horizontal scrollbar thinner */
+}
+
+/* Scrollbar Thumb - Applies to both */
 ::-webkit-scrollbar-thumb {
   background-color: #980404;
   border-radius: 10px;
-
   border: 2px solid transparent;
   background-clip: content-box;
 }
 
-::-webkit-scrollbar-thumb:hover {
+/* Horizontal Scrollbar Thumb Hover */
+::-webkit-scrollbar-thumb:horizontal:hover {
   background-color: #484548;
 }
 
+/* Vertical Scrollbar Thumb Hover */
+::-webkit-scrollbar-thumb:vertical:hover {
+  background-color: #484548;
+}
+
+/* Track - Applies to both */
 ::-webkit-scrollbar-track {
   background: #ffffff;
   border-radius: 10px;
 }
 
+/* Hide scrollbar buttons for both */
 ::-webkit-scrollbar-button {
-  display: none; /* Remove the scrollbar buttons (arrows) */
+  display: none;
 }
-
 

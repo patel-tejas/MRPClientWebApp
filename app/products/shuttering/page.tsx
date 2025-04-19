@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { CheckCircle, ArrowRight } from "lucide-react"
 import redsp from "@/public/redsp.jpg"
+import inova from "@/public/innova.jpg"
 import blacksp from "@/public/blacksp.jpg"
 import repetition from "@/public/repetition.jpg"
 import metallic from "@/public/metallic.jpg"
@@ -11,24 +12,48 @@ export default function ShutteringPage() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="relative h-[300px] md:h-[400px]">
-        <Image
-          src="/placeholder.svg?height=400&width=1920"
-          alt="Shuttering Plywood"
-          fill
-          className="object-cover"
-          sizes="(max-width: 768px) 100vw, 50vw"
-          priority
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-transparent md:px-5">
-          <div className="container h-full flex flex-col justify-center px-4 md:px-0">
-            <div className="max-w-xl">
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-3 md:mb-4">Shuttering Plywood</h1>
-              <p className="text-lg md:text-xl text-white/80 mb-4 md:mb-6">Water Proof Mirror Finish Shuttering Options</p>
-              <Button className="bg-red-600 hover:bg-red-700 w-full sm:w-auto">Request a Quote</Button>
+      <section className="relative h-[400px] md:h-[450px] bg-gradient-to-br from-gray-900 to-blue-950 overflow-hidden">
+        {/* Watermark Pattern */}
+        <div className="absolute inset-0 grid grid-cols-3 md:grid-cols-4 gap-8 opacity-90 -rotate-45 -left-10 -top-20">
+          {[...Array(100)].map((_, i) => (
+            <div key={i} className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold uppercase 
+           text-transparent bg-clip-text bg-gradient-to-r from-red-400/20 to-blue-400/20">
+              ZIPCO
+            </div>
+          ))}
+        </div>
+
+        {/* 3D Product Image - Desktop Only */}
+        <div className="hidden lg:block absolute right-0 top-1/2 -translate-y-1/2 w-[500px] h-[80%] perspective-1000">
+            <Image
+              src={inova} // Replace with your image path
+              alt="Premium Shuttering Plywood"
+              fill
+              className="object-contain"
+
+            />
+            {/* 3D Edge Effect */}
+        </div>
+
+        {/* Content Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-transparent">
+          <div className="container h-full flex flex-col justify-center px-4 md:px-8">
+            <div className="max-w-xl relative z-10">
+              <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">
+                Professional Grade Shuttering Plywood
+              </h1>
+              <p className="text-lg md:text-xl text-gray-300 mb-6">
+                Waterproof & Durable Construction Solutions
+              </p>
+              <Button className="bg-red-600 text-white px-8 py-4 text-lg">
+                Request Quote
+              </Button>
             </div>
           </div>
         </div>
+
+        {/* Bottom Gradient */}
+        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-blue-950/50 to-transparent" />
       </section>
 
 
