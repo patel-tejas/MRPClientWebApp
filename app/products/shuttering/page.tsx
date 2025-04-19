@@ -14,10 +14,10 @@ export default function ShutteringPage() {
       {/* Hero Section */}
       <section className="relative h-[400px] md:h-[450px] bg-gradient-to-br from-gray-900 to-blue-950 overflow-hidden">
         {/* Watermark Pattern */}
-        <div className="absolute inset-0 grid grid-cols-3 md:grid-cols-4 gap-8 opacity-90 -rotate-45 -left-10 -top-20">
+        <div className="absolute inset-0 grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 opacity-90 -rotate-45 -top-[450px]">
           {[...Array(100)].map((_, i) => (
             <div key={i} className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold uppercase 
-           text-transparent bg-clip-text bg-gradient-to-r from-red-400/20 to-blue-400/20">
+           text-transparent bg-clip-text bg-gradient-to-r from-red-400/30 to-blue-400/20">
               ZIPCO
             </div>
           ))}
@@ -32,7 +32,6 @@ export default function ShutteringPage() {
               className="object-contain"
 
             />
-            {/* 3D Edge Effect */}
         </div>
 
         {/* Content Overlay */}

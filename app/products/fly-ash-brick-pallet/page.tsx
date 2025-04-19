@@ -2,34 +2,57 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { CheckCircle } from "lucide-react"
+import palletmain from "@/public/pallet-main2.png"
+import flyash from "@/public/flyash.jpg"
 
 export default function FlyAshBrickPalletPage() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="relative h-[300px] md:h-[400px]">
-        <Image
-          src="/pallet-hero.jpg"
-          alt="Fly Ash Brick Pallets"
-          fill
-          className="object-cover"
-          sizes="(max-width: 768px) 100vw, 50vw"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-transparent md:px-5">
-          <div className="container h-full flex flex-col justify-center px-4 md:px-0">
-            <div className="max-w-xl">
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-3 md:mb-4">
-                Zipco Fly Ash Brick Pallets
-              </h1>
-              <p className="text-lg md:text-xl text-white/80 mb-4 md:mb-6">
-                Engineered for Strength & Precision
-              </p>
-              <Button className="bg-red-600 hover:bg-red-700 w-full sm:w-auto">
-                Request a Quote
-              </Button>
+      <section className="relative h-[400px] md:h-[450px] bg-gradient-to-br from-white to-gray-100 overflow-hidden">
+        {/* Watermark Pattern */}
+        <div className="absolute inset-0 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 opacity-40 -rotate-45 -top-[450px]">
+          {[...Array(100)].map((_, i) => (
+            <div key={i} className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold uppercase 
+           text-transparent bg-clip-text bg-gradient-to-r from-red-600/30 to-blue-700/80">
+              ZIPCO
             </div>
+          ))}
+        </div>
+
+        {/* 3D Product Image - Desktop Only */}
+        <div className="hidden lg:block absolute right-0 top-1/2 -translate-y-1/2 w-[500px] h-[90%] perspective-1000">
+          <div className="relative w-full h-full">
+            <Image
+              src={palletmain}
+              alt="Premium Fly Ash Brick Pallets"
+              fill
+              className="object-contain drop-shadow-2xl"
+              style={{
+                filter: 'drop-shadow(20px 15px 30px rgba(0,0,0,0.15))'
+              }}
+            />
           </div>
         </div>
+
+        {/* Content Container */}
+        <div className="absolute inset-0 container h-full flex flex-col justify-center px-4 md:px-8">
+          <div className="max-w-xl relative z-10">
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4 leading-tight">
+              Zipco Fly Ash Brick Pallets
+            </h1>
+            <p className="text-lg md:text-xl text-gray-600 mb-6">
+              Engineered for Strength & Precision
+            </p>
+            <Button className="bg-red-600 text-white px-8 py-4 text-lg hover:bg-red-700
+                        shadow-lg shadow-red-200">
+              Request Quote
+            </Button>
+          </div>
+        </div>
+
+        {/* Decorative Bottom Edge */}
+        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-gray-100/50 to-transparent" />
       </section>
 
       {/* Product Description */}
@@ -76,12 +99,11 @@ export default function FlyAshBrickPalletPage() {
                 </div>
               </div>
             </div>
-            <div>
+            <div className="relative w-full h-[300px] md:h-[400px] lg:h-[500px]">
               <Image
-                src="/pallet-usage.jpg"
+                src={flyash}
                 alt="Fly Ash Brick Pallet in Use"
-                width={600}
-                height={400}
+                fill
                 className="rounded-lg shadow-lg w-full h-auto"
                 sizes="(max-width: 768px) 100vw, 50vw"
               />
@@ -144,12 +166,11 @@ export default function FlyAshBrickPalletPage() {
             <TabsContent value="standard" className="mt-4 md:mt-6">
               <div className="bg-white p-4 md:p-6 rounded-lg shadow-md">
                 <div className="flex flex-col md:grid md:grid-cols-2 gap-6 md:gap-8 items-center">
-                  <div>
+                  <div className="relative md:w-[80%] h-[300px] md:h-[400px] lg:h-[700px]">
                     <Image
                       src="/standard-pallet.jpg"
                       alt="Standard Fly Ash Brick Pallet"
-                      width={500}
-                      height={300}
+                      fill
                       className="rounded-lg w-full h-auto"
                       sizes="(max-width: 768px) 100vw, 50vw"
                     />
@@ -193,7 +214,7 @@ export default function FlyAshBrickPalletPage() {
                 <div className="flex flex-col md:grid md:grid-cols-2 gap-6 md:gap-8 items-center">
                   <div>
                     <Image
-                      src="/calibrated-pallet.jpg"
+                      src="/standard-pallet.jpg"
                       alt="Calibrated Fly Ash Brick Pallet"
                       width={500}
                       height={300}
@@ -398,7 +419,7 @@ export default function FlyAshBrickPalletPage() {
             <Button className="bg-white text-blue-900 hover:bg-gray-100 w-full md:w-auto px-6 py-3">
               Request Custom Quote
             </Button>
-            <Button variant="outline" className="text-white border-white hover:bg-white/10 w-full md:w-auto px-6 py-3">
+            <Button className="text-white border-white hover:bg-white/10 w-full md:w-auto px-6 py-3">
               Download Full Catalog
             </Button>
           </div>

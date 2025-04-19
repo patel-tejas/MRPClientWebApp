@@ -177,7 +177,7 @@ export default function ContactPage() {
                 <div className="relative w-full overflow-hidden pb-[56.25%] h-0 rounded-lg shadow-lg">
                   <iframe
                     className="absolute top-0 left-0 w-full h-full border-0"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.088839910621!2d72.5548269750536!3d23.071609914496964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e837abd68664f%3A0xa355c744528ab0b5!2sShubh%20Labh%20Society!5e1!3m2!1sen!2sin!4v1744990317691!5m2!1sen!2sin"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3670.6943490238946!2d72.55474487455672!3d23.071664714495814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e83b5af1a29d9%3A0x20cb6258c070d3!2sMRP%20EXIM%20PRODUCTS!5e0!3m2!1sen!2sin!4v1745044574219!5m2!1sen!2sin"
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
                     allowFullScreen
