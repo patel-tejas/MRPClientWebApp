@@ -4,6 +4,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { CheckCircle } from "lucide-react"
 import palletmain from "@/public/pallet-main.png"
 import flyash from "@/public/flyash.jpg"
+import Link from "next/link"
 
 export default function FlyAshBrickPalletPage() {
   return (
@@ -44,10 +45,10 @@ export default function FlyAshBrickPalletPage() {
             <p className="text-lg md:text-xl text-gray-600 mb-6">
               Engineered for Strength & Precision
             </p>
-            <Button className="bg-red-600 text-white px-8 py-4 text-lg hover:bg-red-700
+            <Link href="/contact" className="bg-red-600 rounded-xl text-white px-8 py-3 text-lg hover:bg-red-700
                         shadow-lg shadow-red-200">
               Request Quote
-            </Button>
+            </Link>
           </div>
         </div>
 
@@ -141,7 +142,7 @@ export default function FlyAshBrickPalletPage() {
       <section className="py-12 md:py-16">
         <div className="container px-4 md:px-10">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 md:mb-12">
-            Pallet Variants
+            Wooden Fly Ash Brick Pallet Variants
           </h2>
 
           <Tabs defaultValue="standard" className="w-full">
@@ -166,7 +167,7 @@ export default function FlyAshBrickPalletPage() {
             <TabsContent value="standard" className="mt-4 md:mt-6">
               <div className="bg-white p-4 md:p-6 rounded-lg shadow-md">
                 <div className="flex flex-col md:grid md:grid-cols-2 gap-6 md:gap-8 items-center">
-                  <div className="relative md:w-[80%] h-[300px] md:h-[400px] lg:h-[700px]">
+                  <div className="relative w-full md:w-[80%] h-[400px] md:h-[400px] lg:h-[700px]">
                     <Image
                       src="/standard-pallet.jpg"
                       alt="Standard Fly Ash Brick Pallet"
@@ -202,7 +203,14 @@ export default function FlyAshBrickPalletPage() {
                       </div>
                     </div>
 
-                    <Button className="bg-red-600 hover:bg-red-700">Download Specification</Button>
+                    <div className="flex flex-col md:flex-row gap-4">
+                      <Link href="/Zipco-Fly-Ash-Brick-Pallet-Brochure.pdf" target="_blank" className="rounded-lg bg-red-600 text-white hover:bg-red-700 w-full md:w-auto px-6 py-2 duration-200 text-center">
+                        Download Brochure
+                      </Link>
+                      <Link href={"/contact"} className="rounded-lg bg-blue-600 text-center text-white duration-200 hover:bg-blue-700 w-full md:w-auto px-6 py-2">
+                        Request a Quote
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -214,7 +222,7 @@ export default function FlyAshBrickPalletPage() {
                 <div className="flex flex-col md:grid md:grid-cols-2 gap-6 md:gap-8 items-center">
                   <div>
                     <Image
-                      src="/standard-pallet.jpg"
+                      src="/calibrated.jpg"
                       alt="Calibrated Fly Ash Brick Pallet"
                       width={500}
                       height={300}
@@ -257,8 +265,14 @@ export default function FlyAshBrickPalletPage() {
                         <li>Ideal for high-rises and RCC structures</li>
                       </ul>
                     </div>
-
-                    <Button className="bg-red-600 hover:bg-red-700">Request Calibrated Quote</Button>
+                    <div className="flex flex-col md:flex-row gap-4">
+                      <Link href="/Zipco-Fly-Ash-Brick-Pallet-Brochure.pdf" target="_blank" className="rounded-lg bg-red-600 text-white hover:bg-red-700 w-full md:w-auto px-6 py-2 duration-200 text-center">
+                        Download Brochure
+                      </Link>
+                      <Link href={"/contact"} className="rounded-lg bg-blue-600 text-center text-white duration-200 hover:bg-blue-700 w-full md:w-auto px-6 py-2">
+                        Request a Quote
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -314,7 +328,14 @@ export default function FlyAshBrickPalletPage() {
                       </ul>
                     </div>
 
-                    <Button className="bg-red-600 hover:bg-red-700">Inquire About Jute Pallets</Button>
+                    <div className="flex flex-col md:flex-row gap-4">
+                      <Link href="/Zipco-Fly-Ash-Brick-Pallet-Brochure.pdf" target="_blank" className="rounded-lg bg-red-600 text-white hover:bg-red-700 w-full md:w-auto px-6 py-2 duration-200 text-center">
+                        Download Brochure
+                      </Link>
+                      <Link href={"/contact"} className="rounded-lg bg-blue-600 text-center text-white duration-200 hover:bg-blue-700 w-full md:w-auto px-6 py-2">
+                        Inquire Now
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -333,7 +354,11 @@ export default function FlyAshBrickPalletPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
             <div className="bg-white p-4 md:p-6 rounded-lg shadow-md border border-gray-100">
               <div className="bg-blue-100 text-blue-800 rounded-full w-12 h-12 flex items-center justify-center mb-4">
-                {/* Icon */}
+
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                </svg>
+
               </div>
               <h3 className="text-lg md:text-xl font-semibold mb-2">
                 Industrial-Grade Durability
@@ -416,15 +441,16 @@ export default function FlyAshBrickPalletPage() {
             Get in touch with our experts to find the perfect pallet solution...
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-3 md:gap-4">
-            <Button className="bg-white text-blue-900 hover:bg-gray-100 w-full md:w-auto px-6 py-3">
-              Request Custom Quote
-            </Button>
-            <Button className="text-white border-white hover:bg-white/10 w-full md:w-auto px-6 py-3">
-              Download Full Catalog
-            </Button>
+            <Link href="/Zipco-Fly-Ash-Brick-Pallet-Brochure.pdf" target="_blank" className="rounded-lg bg-white text-blue-900 hover:bg-gray-300 w-full md:w-auto px-6 py-3 duration-200">
+              Download Brochure
+            </Link>
+            <Link href={"/contact"} className="rounded-lg bg-red-600 text-white duration-200 hover:bg-red-700 w-full md:w-auto px-6 py-3">
+              Request a Quote
+            </Link>
+
           </div>
         </div>
-      </section>
-    </div>
+      </section >
+    </div >
   )
 }
