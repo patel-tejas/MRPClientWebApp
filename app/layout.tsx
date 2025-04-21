@@ -7,6 +7,7 @@ import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 import FloatingContactButton from "@/components/FloatingContact"
 import { TooltipProvider } from "@/components/ui/tooltip"
+import { Analytics } from '@vercel/analytics/next';
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -37,6 +38,7 @@ export default function RootLayout({
             </div>
           </TooltipProvider>
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   )
