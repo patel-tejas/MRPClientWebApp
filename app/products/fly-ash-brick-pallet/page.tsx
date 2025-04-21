@@ -5,7 +5,10 @@ import { CheckCircle } from "lucide-react"
 import palletmain from "@/public/pallet-main.png"
 import flyash from "@/public/flyash.jpg"
 import Link from "next/link"
-
+export const metadata = {
+  title: 'Fly Ash Brick Pallet – MRP Exim Products',
+  description: 'Discover our premium fly ash brick pallets designed for durability and efficiency in construction. Available in multiple variants to suit your needs.',
+}
 export default function FlyAshBrickPalletPage() {
   return (
     <div className="flex flex-col min-h-screen">

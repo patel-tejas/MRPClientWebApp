@@ -3,6 +3,10 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
 
+export const metadata = {
+  title: 'Products – MRP Exim Products',
+  description: 'Explore our range of high-quality shuttering plywood and fly ash brick pallets. Our products are designed to meet the demands of modern construction projects, offering durability and cost-effectiveness.',
+}
 export default function ProductsPage() {
   return (
     <div className="flex flex-col min-h-screen">

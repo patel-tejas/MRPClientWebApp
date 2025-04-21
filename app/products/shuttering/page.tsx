@@ -9,6 +9,10 @@ import repetition from "@/public/repetition.jpg"
 import metallic from "@/public/metallic.jpg"
 import Link from "next/link"
 
+export const metadata = {
+  title: 'Shuttering Plywood – MRP Exim Products',
+  description: 'Explore our range of high-quality shuttering plywood products, including red, black, metallic, and 100 repetition options',
+}
 export default function ShutteringPage() {
   return (
     <div className="flex flex-col min-h-screen">

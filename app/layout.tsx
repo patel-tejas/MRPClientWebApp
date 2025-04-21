@@ -8,6 +8,7 @@ import Footer from "@/components/footer"
 import FloatingContactButton from "@/components/FloatingContact"
 import { TooltipProvider } from "@/components/ui/tooltip"
 import { Analytics } from '@vercel/analytics/next';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -17,7 +18,7 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   title: "MRP Exim Products – High-Quality Shuttering Plywood & Pallets",
   description:
-    "MRP Exim Products is a leading manufacturer of premium shuttering plywood and fly ash brick pallets. With a focus on durability, sustainability, and cost-effectiveness, our ZIPCO range is designed to meet the demands of modern construction projects. Discover our high-abrasion metallic film face plywood engineered for superior performance and long-term value.",
+    "MRP Exim Products is a leading manufacturer of premium shuttering plywood and fly ash brick pallets. Discover our high-abrasion metallic film face plywood engineered for superior performance and cost effectiveness.",
 };
 export default function RootLayout({
   children,
@@ -39,6 +40,7 @@ export default function RootLayout({
           </TooltipProvider>
         </ThemeProvider>
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   )

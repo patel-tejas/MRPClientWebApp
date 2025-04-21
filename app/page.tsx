@@ -9,6 +9,8 @@ import repetition from "@/public/repetition.jpg"
 import metallic from "@/public/metallic.jpg"
 import flyash from "@/public/flyash.jpg"
 import Link from "next/link"
+
+
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">

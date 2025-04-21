@@ -11,7 +11,7 @@ export default function Footer() {
           <div>
             <h3 className="text-xl font-bold mb-4">MRP EXIM PRODUCTS</h3>
             <p className="text-neutral-300 mb-4">
-              Leading manufacturer of high-quality shuttering plywood and construction materials for B2B clients.
+              Leading manufacturer of high-quality shuttering plywood and pallets.
             </p>
             <div className="flex space-x-4">
               <Link href="https://www.mrpeximproducts.com" target="_blank" className="text-white hover:text-primary">

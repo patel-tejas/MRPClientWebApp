@@ -1,6 +1,12 @@
 import Image from "next/image"
 import { CheckCircle } from "lucide-react"
 import about from "@/public/about.avif"
+
+export const metadata = {
+  title: 'About Us – MRP Exim Products',
+  description: 'We are a leading manufacturer of high quality shuttering plywood and fly ash brick pallets. Our products are designed to meet the demands of modern construction projects, offering durability and cost-effectiveness.',
+}
+
 export default function AboutPage() {
   return (
     <div className="flex flex-col min-h-screen">

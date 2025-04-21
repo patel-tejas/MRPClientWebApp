@@ -11,6 +11,11 @@ import { MapPin, Phone, Mail, Clock } from "lucide-react"
 import Link from "next/link"
 import axios from "axios"
 
+export const metadata = {
+  title: 'Contact – MRP Exim Products',
+  description: 'Get in touch with us for inquiries, support, or partnership opportunities. We are here to assist you with your pallet or shuttering plywood needs.',
+}
+
 export default function ContactPage() {
   const [formData, setFormData] = useState({
     name: "",
