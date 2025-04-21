@@ -44,11 +44,7 @@ export default function Footer() {
                   About Us
                 </Link>
               </li>
-              <li>
-                <Link href="/products" className="text-neutral-300 hover:text-primary">
-                  Products
-                </Link>
-              </li>
+             
 
               <li>
                 <Link href="/contact" className="text-neutral-300 hover:text-primary">
