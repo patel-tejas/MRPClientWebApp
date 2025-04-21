@@ -45,9 +45,9 @@ export default function ShutteringPage() {
               <p className="text-lg md:text-xl text-gray-300 mb-6">
                 Waterproof & Durable Construction Solutions
               </p>
-              <Button className="bg-red-600 text-white px-8 py-4 text-lg">
+              <Link href="/contact" className="bg-red-600 rounded-xl text-white px-8 py-3 text-lg hover:bg-red-700">
                 Request Quote
-              </Button>
+              </Link>
             </div>
           </div>
         </div>
