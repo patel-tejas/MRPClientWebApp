@@ -1,5 +1,7 @@
 import Link from "next/link"
-import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone, Twitter } from "lucide-react"
+import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa"
+import { CiGlobe } from "react-icons/ci";
+import { Mail, MapPin, Phone } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -12,20 +14,25 @@ export default function Footer() {
               Leading manufacturer of high-quality shuttering plywood and construction materials for B2B clients.
             </p>
             <div className="flex space-x-4">
-              <Link href="#" className="text-white hover:text-primary">
-                <Facebook size={20} />
+              <Link href="https://www.mrpeximproducts.com" target="_blank" className="text-white hover:text-primary">
+                <CiGlobe size={20} />
+                <span className="sr-only">Website</span>
+              </Link>
+
+              <Link href="https://www.facebook.com/profile.php?id=61571205058254&mibextid=ZbWKwL" target="_blank" className="text-white hover:text-primary">
+                <FaFacebook size={20} />
                 <span className="sr-only">Facebook</span>
               </Link>
-              <Link href="#" className="text-white hover:text-primary">
-                <Twitter size={20} />
+              <Link href="https://x.com/MrpEximProducts" target="_blank" className="text-white hover:text-primary">
+                <FaTwitter size={20} />
                 <span className="sr-only">Twitter</span>
               </Link>
-              <Link href="#" className="text-white hover:text-primary">
-                <Instagram size={20} />
+              <Link href="https://www.instagram.com/mrp_exim_products/" target="_blank" className="text-white hover:text-primary">
+                <FaInstagram size={20} />
                 <span className="sr-only">Instagram</span>
               </Link>
-              <Link href="#" className="text-white hover:text-primary">
-                <Linkedin size={20} />
+              <Link href="https://www.linkedin.com/in/mrp-exim-products-072993338/" className="text-white hover:text-primary" target="_blank">
+                <FaLinkedin size={20} />
                 <span className="sr-only">LinkedIn</span>
               </Link>
             </div>
@@ -44,7 +51,7 @@ export default function Footer() {
                   About Us
                 </Link>
               </li>
-             
+
 
               <li>
                 <Link href="/contact" className="text-neutral-300 hover:text-primary">
