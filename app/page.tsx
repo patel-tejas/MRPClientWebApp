@@ -27,11 +27,15 @@ export default function Home() {
             <div className="container h-full flex flex-col justify-center">
               <div className="max-w-xl space-y-6">
                 <div className="bg-amber-400 text-black p-8 rounded-lg">
-                  <h1 className="text-4xl md:text-5xl font-bold leading-tight">
+                  <h1 className="text-4xl md:text-5xl font-bold leading-tight text-center sm:text-left">
                     Need Shuttering Plywood For Your Next High Rise?
                   </h1>
-                  <p className="mt-4 text-lg">Source Shuttering Ply For Your Project</p>
-                  <Link href={"/contact"}><Button className="mt-6 bg-red-600 hover:bg-red-700 text-white">Get In Touch With Us Now!</Button></Link>
+                  <p className="mt-4 text-lg text-center sm:text-left">Source Shuttering Ply For Your Project</p>
+                  <Link href={"/contact"} className="block text-center sm:inline">
+                    <Button className="mt-6 bg-red-600 hover:bg-red-700 text-white">
+                      Get In Touch With Us Now!
+                    </Button>
+                  </Link>
                 </div>
               </div>
             </div>
