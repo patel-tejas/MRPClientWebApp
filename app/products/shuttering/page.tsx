@@ -7,6 +7,7 @@ import inova from "@/public/innova.jpg"
 import blacksp from "@/public/blacksp.jpg"
 import repetition from "@/public/repetition.jpg"
 import metallic from "@/public/metallic.jpg"
+import Link from "next/link"
 
 export default function ShutteringPage() {
   return (
@@ -25,13 +26,13 @@ export default function ShutteringPage() {
 
         {/* 3D Product Image - Desktop Only */}
         <div className="hidden lg:block absolute right-0 top-1/2 -translate-y-1/2 w-[500px] h-[80%] perspective-1000">
-            <Image
-              src={inova} // Replace with your image path
-              alt="Premium Shuttering Plywood"
-              fill
-              className="object-contain"
+          <Image
+            src={inova} // Replace with your image path
+            alt="Premium Shuttering Plywood"
+            fill
+            className="object-contain"
 
-            />
+          />
         </div>
 
         {/* Content Overlay */}
@@ -94,7 +95,7 @@ export default function ShutteringPage() {
                       sizes="(max-width: 768px) 100vw, 50vw"
                     />
                   </div>
-                  <div>
+                  <div className="pb-5">
                     <h3 className="text-xl md:text-2xl font-bold mb-3 md:mb-4"><span className="text-primary">Red</span> Film Faced Shuttering Plywood</h3>
                     <p className="text-gray-700 mb-4 text-sm md:text-base">
                       Inova Film Faced Shuttering Plywood - where engineering precision meets construction excellence.
@@ -123,7 +124,7 @@ export default function ShutteringPage() {
                       </div>
                     </div>
 
-                    <div className="mb-4 md:mb-6">
+                    <div className="mb-10 md:mb-6">
                       <h4 className="text-base md:text-lg font-semibold mb-2 md:mb-3">Technical Specifications (IS : 4990)</h4>
                       <div className="overflow-x-auto">
                         <table className="min-w-[600px] w-full border-collapse text-sm">
@@ -160,9 +161,9 @@ export default function ShutteringPage() {
                       </div>
                     </div>
 
-                    <Button className="bg-red-600 hover:bg-red-700 w-full md:w-auto text-sm md:text-base">
-                      Download Full Specification
-                    </Button>
+                    <Link href="/Mirror Film faced Shuttering Plywood.pdf" target="_blank" className="rounded-lg bg-red-500 hover:bg-red-600 text-white w-full md:w-auto px-6 py-3 duration-200">
+                      Download Brochure
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -182,7 +183,7 @@ export default function ShutteringPage() {
                       sizes="(max-width: 768px) 100vw, 50vw"
                     />
                   </div>
-                  <div>
+                  <div className="pb-5">
                     <h3 className="text-xl md:text-2xl font-bold mb-3 md:mb-4">Black Film Faced Shuttering Plywood</h3>
                     <p className="text-gray-700 mb-4 text-sm md:text-base">
                       Inova Film Faced Shuttering Plywood - where engineering precision meets construction excellence.
@@ -211,7 +212,7 @@ export default function ShutteringPage() {
                       </div>
                     </div>
 
-                    <div className="mb-4 md:mb-6">
+                    <div className="mb-10 md:mb-6">
                       <h4 className="text-base md:text-lg font-semibold mb-2 md:mb-3">Technical Specifications (IS : 4990)</h4>
                       <div className="overflow-x-auto">
                         <table className="min-w-[600px] w-full border-collapse text-sm">
@@ -248,9 +249,9 @@ export default function ShutteringPage() {
                       </div>
                     </div>
 
-                    <Button className="bg-red-600 hover:bg-red-700 w-full md:w-auto text-sm md:text-base">
-                      Download Full Specification
-                    </Button>
+                    <Link href="/Mirror Film faced Shuttering Plywood.pdf" target="_blank" className="rounded-lg bg-black hover:bg-gray-700 text-white w-full md:w-auto px-6 py-3 duration-200">
+                      Download Brochure
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -270,7 +271,7 @@ export default function ShutteringPage() {
                       sizes="(max-width: 768px) 100vw, 50vw"
                     />
                   </div>
-                  <div>
+                  <div className="pb-5">
                     <h3 className="text-xl md:text-2xl font-bold mb-3 md:mb-4">Zipco Metallic Shuttering Plywood</h3>
                     <p className="text-gray-700 mb-4 text-sm md:text-base">
                       Revolutionizing concrete formwork with advanced aluminum-zinc alloy coating, Zipco Metallic Plywood delivers
@@ -298,7 +299,7 @@ export default function ShutteringPage() {
                       </div>
                     </div>
 
-                    <div className="mb-4 md:mb-6">
+                    <div className="mb-10 md:mb-6">
                       <h4 className="text-base md:text-lg font-semibold mb-2 md:mb-3">Performance Superiority</h4>
                       <div className="overflow-x-auto">
                         <table className="min-w-[600px] w-full border-collapse text-sm">
@@ -330,9 +331,9 @@ export default function ShutteringPage() {
                       </div>
                     </div>
 
-                    <Button className="bg-red-600 hover:bg-red-700 w-full md:w-auto text-sm md:text-base">
-                      Download Full Tech Specs
-                    </Button>
+                    <Link href="/Zipco Metallic Shuttering Plywood.pdf" target="_blank" className="rounded-lg bg-red-500 text-white hover:bg-red-600 w-full md:w-auto px-6 py-3 duration-200">
+                      View Brochure
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -352,7 +353,7 @@ export default function ShutteringPage() {
                       sizes="(max-width: 768px) 100vw, 50vw"
                     />
                   </div>
-                  <div>
+                  <div className="pb-5">
                     <h3 className="text-xl md:text-2xl font-bold mb-3 md:mb-4">100 Repetition Jute Shuttering Plywood</h3>
                     <p className="text-gray-700 mb-4 text-sm md:text-base">
                       Engineered with triple-layered jute reinforcement and advanced phenolic resins, our eco-friendly shuttering solution
@@ -380,7 +381,7 @@ export default function ShutteringPage() {
                       </div>
                     </div>
 
-                    <div className="mb-4 md:mb-6">
+                    <div className="mb-10 md:mb-6">
                       <h4 className="text-base md:text-lg font-semibold mb-2 md:mb-3">Performance Advantages</h4>
                       <div className="overflow-x-auto">
                         <table className="min-w-[600px] w-full border-collapse text-sm">
@@ -412,9 +413,9 @@ export default function ShutteringPage() {
                       </div>
                     </div>
 
-                    <Button className="bg-green-600 hover:bg-green-700 w-full md:w-auto text-sm md:text-base">
-                      Request Eco Audit Report
-                    </Button>
+                    <Link href="/Zipco Metallic Shuttering Plywood.pdf" target="_blank" className="rounded-lg bg-red-500 text-white hover:bg-red-600 w-full md:w-auto px-6 py-3 duration-200">
+                      View Brochure
+                    </Link>
                   </div>
                 </div>
               </div>
