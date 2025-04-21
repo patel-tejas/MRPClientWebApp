@@ -433,12 +433,11 @@ export default function ShutteringPage() {
             plywood products.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-3 md:gap-4">
-            <Button className="bg-white text-red-600 hover:bg-gray-100 w-full sm:w-auto">
-              Request a Quote
-            </Button>
-            <Button className="text-white border-white hover:bg-white/10 w-full sm:w-auto">
-              Download Catalog
-            </Button>
+            <Link href="/contact">
+              <Button className="bg-white text-red-600 hover:bg-gray-100 w-full sm:w-auto">
+                Request a Quote
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
