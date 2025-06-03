@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa"
+import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaYoutube } from "react-icons/fa"
 import { CiGlobe } from "react-icons/ci";
 import { Mail, MapPin, Phone } from "lucide-react";
 
@@ -34,6 +34,10 @@ export default function Footer() {
               <Link href="https://www.linkedin.com/in/mrp-exim-products-072993338/" className="text-white hover:text-primary" target="_blank">
                 <FaLinkedin size={20} />
                 <span className="sr-only">LinkedIn</span>
+              </Link>
+              <Link href="https://www.youtube.com/@MRPEXIMPRODUCTS" className="text-white hover:text-primary" target="_blank">
+                <FaYoutube size={20} />
+                <span className="sr-only">Youtube</span>
               </Link>
             </div>
           </div>
